@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+
+        <center>
+
+            <br> 
+            <p>Place Your Order</p>
+
+        </center>
+
+        <script>
+            var qty;
+            qty=0
+
+            function light(w) {
+                if (w==1) {
+                    qty=1;
+                }
+                else if (w==2) {
+                    qty=2;
+                }
+                else if (w==3) {
+                    qty=3;
+                }
+                else {
+                    qty=0;
+                }
+                document.getElementById("demo1").innerHTML = qty;
+        }
+        </script>
+
+        <center>
+        <br>
+            <table border="1" width="100">
+                <tr>
+                    <td align="center">
+                        <button type="button" onclick="light(1)">ONE</button>
+                        <button type="button" onclick="light(2)">TWO</button>
+                        <button type="button" onclick="light(3)">THREE</button>
+                        <button type="button" onclick="light(4)">CLEAR</button></td>
+                    <td align="center">quantity<br><div id="demo1"></div></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
